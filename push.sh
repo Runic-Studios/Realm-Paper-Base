@@ -4,7 +4,7 @@ set -euo pipefail
 echo "Pulling LFS files..."
 git lfs pull
 
-TARGET="/mnt/realm-paper-base"
+TARGET="/mnt/realm-paper-base/server"
 SOURCE="./server"
 
 # Copy the file
