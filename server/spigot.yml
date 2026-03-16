@@ -27,6 +27,8 @@ settings:
   restart-script: ./start.sh
   netty-threads: 4
   attribute:
+    maxAbsorption:
+      max: 2048.0
     maxHealth:
       max: 9.99999999E8
     movementSpeed:
@@ -60,12 +62,16 @@ commands:
   - tellraw
   tab-complete: 0
   send-namespaced: true
+  enable-spam-exclusions: false
 advancements:
   disable-saving: true
   disabled:
   - '*'
 world-settings:
   default:
+    unload-frozen-chunks: false
+    seed-trailruins: 83469867
+    seed-trialchambers: 94251327
     below-zero-generation-in-existing-chunks: true
     thunder-chance: 100000
     hopper-can-load-chunks: false
@@ -91,6 +97,7 @@ world-settings:
       item: 2.5
     mob-spawn-range: 4
     growth:
+      pitcherplant-modifier: 100
       torchflower-modifier: 100
       twistingvines-modifier: 100
       weepingvines-modifier: 100
