@@ -10,10 +10,7 @@ Configuration:
   # Item Updater
   #================================================================================
   ItemUpdating:
-    Enabled: false
-    OnLogin: true
-    OnScroll: true
-    OnInvClose: true
+    Enabled: true
 
   #================================================================================
   # FancyDrop Everything (EXPERIMENTAL)
@@ -44,25 +41,6 @@ Configuration:
     SaveRatios: false                   # Save generated stat ratios for the Item Updater
 
   #================================================================================
-  # Lore Templates (requires Crucible)
-  #================================================================================
-  LoreTemplates:
-    EnableDefaultTemplate: false        # If the default template should be applied to all items
-    DefaultTemplateName: DEFAULT        # The name of the default template
-    DefaultTemplate:                    # The default lore template
-    - Line:
-        - '{stats}'
-        - '{stats}<gray>Bonus Stats:'
-        - '{stats-each}<green> <stat.display>'
-    - Filler: ''
-    - Line:
-        - '{augments:GEM}<gray>Gems:'
-        - '{augments-each:GEM}<yellow><augment.display>'
-    - Filler: ''
-    - Line:
-        - '{lore}'
-
-  #================================================================================
   # Custom Blocks (requires Crucible)
   #================================================================================
   CustomBlocks:
@@ -73,3 +51,5 @@ Configuration:
   #================================================================================
   Furniture:
     DefaultType: DISPLAY                # Can be DISPLAY, ARMOR_STAND or ITEM_FRAME
+
+# eyJ1c2VyLW5hbWUiOiJYdHJvblgyIiwidXNlci1pZCI6IjU0NzUiLCJkYXRlIjoiMjAyNS0wNi0yMSAxNzowMSIsInNpdGUiOiJodHRwczovL2dsZWFrcy5wcm8ifQ==
